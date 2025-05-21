@@ -173,10 +173,9 @@ export default function FullWidthTabs() {
 
       const certificateData = certificateSnapshot.docs.map((doc) => doc.data());
 
-      setProjects(projectData);
-      setCertificates(certificateData);
-
       //Sobreescribir para traer la data de mis componentes CertificatesImg y Projects
+      //setProjects(projectData);
+      //setCertificates(certificateData);
       //localStorage.setItem("projects", JSON.stringify(projectData)); --> Para traer la data del LocalStorage del navegador(innecesario)
       setProjects(Projects);
       //localStorage.setItem("certificates", JSON.stringify(certificateData)); --> Para traer la data del LocalStorage del navegador(innecesario)
