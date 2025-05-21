@@ -1,12 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
-export default defineConfig({
-  base: './PortfolioWeb/',
-  /*base: './Portfolio/',*/
-  plugins: [react()],
-  /*server: {
-    open: true,
-  },*/
+export default defineConfig(({ command }) => {
+  return {
+    base: command === 'serve' ? '/' : '/PortfolioWeb/',
+    /*base: command === 'serve' ? '/' : '/Portfolio/',*/
+    plugins: [react()],
+  }
 })
