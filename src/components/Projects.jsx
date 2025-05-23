@@ -63,7 +63,7 @@ const Projects = [
       "S3(AWS)",
       "Firebase",
     ],
-    Link: "https://carlosjordan-portfolio.vercel.app",
+    Link: "https://shakugantz.github.io/PortfolioWeb/",
   },
   {
     id: "4",
