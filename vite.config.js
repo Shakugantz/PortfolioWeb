@@ -3,8 +3,11 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig(({ command }) => {
   return {
-    base: command === 'serve' ? '/' : '/PortfolioWeb/',
+    base: command === 'serve' ? '/' : '/Portfolio/',
     /*base: command === 'serve' ? '/' : '/Portfolio/',*/
     plugins: [react()],
+    /*server: {
+    open: true,
+  },*/
   }
 })
