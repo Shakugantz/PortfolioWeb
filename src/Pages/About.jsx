@@ -249,7 +249,7 @@ const AboutPage = () => {
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
               <a
-                href="https://shakugantz-aws-s3.s3.us-east-1.amazonaws.com/CV/Carlos_Jordan_CV_ENG.docx"
+                href="https://shakugantz-aws-s3.s3.us-east-1.amazonaws.com/CV/CarlosJordan_CV_eng.pdf"
                 className="w-full lg:w-auto"
               >
                 <button
