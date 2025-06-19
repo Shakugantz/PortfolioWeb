@@ -184,10 +184,6 @@ const Home = () => {
     src: "https://lottie.host/e9e6d83b-3d2a-4dc1-9a31-d2ad205690cd/qRxYbGx4HQ.lottie",
     loop: true,
     autoplay: true,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-      progressiveLoad: true,
-    },
     style: { width: "100%", height: "100%" },
     className: `w-full h-full transition-all duration-500 ${
       isHovering
