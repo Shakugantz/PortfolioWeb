@@ -1,5 +1,35 @@
 const Projects = [
   {
+    id: "0",
+    Title: "SynapseCorexAI",
+    Description: `SynapseCorexAI is a comprehensive software development company specializing in creating 
+                cutting-edge technological solutions for businesses of all sizes. With expertise spanning 
+                desktop applications, AI agents, mobile apps, and both static and dynamic web platforms, 
+                we transform ideas into powerful digital products that drive business growth and innovation.`,
+    Img: "https://shakugantz-aws-s3.s3.us-east-1.amazonaws.com/Imagenes/Portfolio/SynapseCorexAi.png",
+    Github: "https://github.com/Shakugantz",
+    Features: [
+      "Custom Desktop Applications: Development of robust desktop software solutions tailored to specific business needs and workflows",
+      "AI Agent Development: Creation of intelligent agents powered by machine learning and natural language processing for automation and decision support",
+      "Mobile App Development: Native and cross-platform mobile applications for iOS and Android with seamless user experiences",
+      "Static Web Solutions: Fast, secure, and SEO-optimized static websites perfect for portfolios, landing pages, and corporate presentations",
+      "Dynamic Web Applications: Full-stack web applications with real-time functionality, complex business logic, and database integration",
+      "Responsive Design: All solutions built with modern frameworks ensuring perfect display across all devices and screen sizes",
+      "End-to-End Services: Complete development lifecycle from consulting and design to deployment and maintenance",
+      "Scalable Architecture: Solutions designed with scalability in mind, capable of growing alongside your business needs",
+      "Modern Tech Stack: Utilizing cutting-edge technologies including React, TypeScript, and Tailwind CSS for optimal performance",
+    ],
+    TechStack: [
+      "TypeScript",
+      "React",
+      "TailwindCSS",
+      "Node.js",
+      "Python",
+      "AWS",
+    ],
+    Link: "https://www.synapsecorexai.com/",
+  },
+  {
     id: "1",
     Title: "Azul Store",
     Description: `This desktop management system is designed to streamline daily operations for small and 
@@ -41,6 +71,38 @@ const Projects = [
   },
   {
     id: "3",
+    Title: "Ormigga",
+    Description: `Comprehensive enterprise platform for supplier management, document approval workflows, and procurement processes. 
+                  Features multi-level approval systems, automated email notifications, and digital signature integration. 
+                  Built with a modern tech stack focusing on scalability and clean architecture principles.`,
+    Img: "https://shakugantz-aws-s3.s3.us-east-1.amazonaws.com/Imagenes/Portfolio/Ormigga.png",
+    Github: "https://github.com/Shakugantz",
+    Features: [
+      "Multi-level Document Approval Workflow: Automated routing and approval processes for supplier documents with real-time status tracking",
+      "Supplier Management Module: Complete CRUD operations for supplier registration, evaluation, and monitoring",
+      "Document Management System: Secure file upload/download with AWS S3 integration and version control",
+      "Automated Email Notifications: Cronjob-based reminder system for pending approvals and document submissions",
+      "HSEQ Compliance Module: Specialized workflows for Health, Safety, Environment, and Quality documentation",
+      "Digital Signature Integration: Secure document signing and validation system",
+      "Role-based Access Control: Granular permissions system for different user types and departments",
+      "Real-time Dashboard: Angular Signals-powered reactive interfaces for monitoring supplier status and pending tasks",
+    ],
+    TechStack: [
+      "Angular 17+",
+      "NestJS",
+      "TypeScript",
+      "TypeORM",
+      "SQL Server",
+      "MongoDB",
+      "AWS S3",
+      "Angular Material",
+      "RxJS",
+      "Node.js",
+    ],
+    Link: "https://www.ormigga.com",
+  },
+  {
+    id: "4",
     Title: "Portfolio Website",
     Description: `My Web Portfolio is a modern, responsive platform designed to showcase my projects, skills, 
                   and professional experience in web and software development. Built with a focus on speed,  
@@ -66,7 +128,7 @@ const Projects = [
     Link: "https://shakugantz.github.io/PortfolioWeb/",
   },
   {
-    id: "4",
+    id: "5",
     Title: "Homebanking Caja Trujillo",
     Description: `The Caja Trujillo Homebanking Platform is a secure and user-friendly online banking system designed 
                   to serve both individual clients (Natural Persons) and corporate clients (Legal Entities). 
@@ -98,7 +160,7 @@ const Projects = [
     Link: "https://homebanking.cajatrujillo.com.pe/Personas/#/auth/login",
   },
   {
-    id: "5",
+    id: "6",
     Title: "Tourism Web",
     Description: `ViajeChinaConLulu is an immersive travel website designed to inspire cultural exploration 
                   and tourism experiences in China, led by Lulu, a passionate local expert. The platform 
@@ -118,7 +180,7 @@ const Projects = [
     Link: "https://shakugantz.github.io/Lulu-Tours/",
   },
   {
-    id: "6",
+    id: "7",
     Title: "Credit Application Web Caja Trujillo",
     Description: `The Credit Application Landing Page for Caja Trujillo is a user-friendly and responsive web interface 
                   designed to streamline the loan request process for new and existing clients. Built with simplicity 
@@ -136,7 +198,7 @@ const Projects = [
     Link: "https://www.cajatrujillo.com.pe/Solicitudcredito/",
   },
   {
-    id: "7",
+    id: "8",
     Title: "ViajeChinaconLulu Tourism Web",
     Description: `ViajeChinaConLulu is an immersive travel website designed to promote cultural exploration 
                   and tourism experiences in China, guided by Lulu a passionate local expert. The platform 
@@ -155,7 +217,7 @@ const Projects = [
     Link: "https://github.com/Shakugantz/react_Web_Tourism",
   },
   {
-    id: "8",
+    id: "9",
     Title: "SICMAT Operaciones (Core Banking System CJ)",
     Description: `SICMAT Operaciones is the central core banking system developed for Caja Trujillo, 
                   designed to manage all over the counter transactions at branch locations. 
@@ -174,7 +236,7 @@ const Projects = [
     Link: "https://www.google.com/404",
   },
   {
-    id: "9",
+    id: "10",
     Title: "SICMAT Gestion (Core Banking System CJ)",
     Description: `SICMAT Gestión is a specialized core banking module developed for Caja Trujillo, designed to manage 
                   all operations involving checks and bank transfers. It plays a vital role in streamlining backoffice 
@@ -192,7 +254,7 @@ const Projects = [
     Link: "https://www.google.com/404",
   },
   {
-    id: "10",
+    id: "11",
     Title: "OPE Terminal (Core Banking System CJ)",
     Description: `OPE Terminal is a mission critical core banking system developed for Caja Trujillo, 
                   designed to handle all cash based transactions performed at bank tellers. It ensures fast, 
@@ -210,7 +272,7 @@ const Projects = [
     Link: "https://www.google.com/404",
   },
   {
-    id: "11",
+    id: "12",
     Title: "App Banking Caja Trujillo",
     Description: `The Caja Trujillo Mobile App is a comprehensive digital banking solution that empowers users to manage 
                   their finances anytime, anywhere. Designed for both individual and business clients, the app supports 

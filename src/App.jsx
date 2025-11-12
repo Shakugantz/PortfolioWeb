@@ -4,6 +4,7 @@ import "./index.css";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import AnimatedBackground from "./components/Background";
+import StaticBackground from "./components/StaticBackground";
 import Navbar from "./components/Navbar";
 import Portofolio from "./Pages/Portofolio";
 import ContactPage from "./Pages/Contact";
@@ -23,7 +24,8 @@ const LandingPage = ({ showWelcome, setShowWelcome }) => {
       {!showWelcome && (
         <>
           <Navbar />
-          <AnimatedBackground />
+          {/*<AnimatedBackground />*/}
+          <StaticBackground />
           <Home />
           <About />
           <Portofolio />
