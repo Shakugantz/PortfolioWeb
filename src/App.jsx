@@ -1,16 +1,18 @@
 import { Routes, Route } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, Suspense, lazy } from "react";
 import "./index.css";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
 import AnimatedBackground from "./components/Background";
 import StaticBackground from "./components/StaticBackground";
 import Navbar from "./components/Navbar";
-import Portofolio from "./Pages/Portofolio";
-import ContactPage from "./Pages/Contact";
-import ProjectDetails from "./components/ProjectDetail";
 import WelcomeScreen from "./Pages/WelcomeScreen";
 import { AnimatePresence } from "framer-motion";
+
+// Lazy load components
+const Home = lazy(() => import("./Pages/Home"));
+const About = lazy(() => import("./Pages/About"));
+const Portofolio = lazy(() => import("./Pages/Portofolio"));
+const ContactPage = lazy(() => import("./Pages/Contact"));
+const ProjectDetails = lazy(() => import("./components/ProjectDetail"));
 
 const LandingPage = ({ showWelcome, setShowWelcome }) => {
   return (
@@ -24,8 +26,8 @@ const LandingPage = ({ showWelcome, setShowWelcome }) => {
       {!showWelcome && (
         <>
           <Navbar />
-          {/*<AnimatedBackground />*/}
-          <StaticBackground />
+          <AnimatedBackground />
+          {/*<StaticBackground />*/}
           <Home />
           <About />
           <Portofolio />
@@ -70,18 +72,31 @@ function App() {
   const [showWelcome, setShowWelcome] = useState(true);
 
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <LandingPage
-            showWelcome={showWelcome}
-            setShowWelcome={setShowWelcome}
-          />
-        }
-      />
-      <Route path="/project/:id" element={<ProjectPageLayout />} />
-    </Routes>
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-[#030014] flex items-center justify-center">
+          <div className="text-center space-y-6">
+            <div className="w-16 h-16 md:w-24 md:h-24 mx-auto border-4 border-blue-500/30 border-t-blue-500 rounded-full animate-spin" />
+            <h2 className="text-xl md:text-3xl font-bold text-white">
+              Loading...
+            </h2>
+          </div>
+        </div>
+      }
+    >
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <LandingPage
+              showWelcome={showWelcome}
+              setShowWelcome={setShowWelcome}
+            />
+          }
+        />
+        <Route path="/project/:id" element={<ProjectPageLayout />} />
+      </Routes>
+    </Suspense>
   );
 }
 
