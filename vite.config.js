@@ -2,9 +2,16 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/",
+  /***DEPLOY EN VERCEL ***/
+  /*base: "/",
   plugins: [react()],
-  /*server: {
+  server: {
   open: true,
 },*/
+  /***DEPLOY EN GITHUB PAGES ***/
+  base: "/PortfolioWeb/",
+  plugins: [react()],
+  server: {
+    open: true,
+  },
 });
